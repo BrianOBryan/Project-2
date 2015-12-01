@@ -1,0 +1,11 @@
+proj2: proj2.o llist.o
+	g++ -o proj2 proj2.o llist.o
+
+proj2.o: proj2.cpp
+	g++ -D DEBUG -c proj2.cpp
+
+llist.o: llist.cpp
+	g++ -c llist.cpp
+
+clean:
+	rm proj2 proj2.o llist.o

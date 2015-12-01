@@ -1,0 +1,398 @@
+Script started on Tue Nov 24 08:52:32 2015
+uhx01% make
+g++ -D DEBUG -c proj2.cpp
+g++ -c llist.cpp
+g++ -o proj2 proj2.o llist.o
+uhx01% ./proj2
+the file is empty
+**DEBUG**Readfile was called on 'readtest.txt'
+Hello!
+This program is a Record Database for Addresses. 
+
+Please enter a Command: 
+printall
+
+Printing all information in the database...
+The list is empty, nothing to print
+
+******** DEBUG ************
+**DEBUG**printAllRecords was executed
+**DEBUG**printAllRecords function was called
+
+Please enter a Command: 
+delete
+
+Please enter the name of the record you would like to delete: Bob
+List is empty, nothing to delete 
+******** DEBUG ************
+**DEBUG**deleteRecord function was called with the parameter: Bob
+
+
+Please enter a Command: 
+print
+
+Please enter the name of the record you want to print: Bob
+The list is empty 
+******DEBUG********
+**DEBUG**print function was called with the parameter: Bob
+
+Please enter a Command: 
+add
+
+Please add an address (Include Name, Year of Birth, Address, and Phone Number): 
+**DEBUG**Entering name
+Please enter the Name: 
+Brian Mayeshiro
+**DEBUG**The name is: Brian Mayeshiro
+**DEBUG**Entering yob
+Please enter the year of birth: 
+1996
+**DEBUG**the yob is: 1996
+
+**DEBUG**Entering Address
+Please Enter the address (Press TAB and ENTER when done): 
+123 Test Rd.
+Honolulu, HI.
+96811   
+**DEBUG**The Address is: 
+123 Test Rd.
+Honolulu, HI.
+96811
+**DEBUG**Entering phone number 
+Please Enter the telephone number: 
+5555555
+**DEBUG**The telNumber is: 5555555
+
+Record has been added
+******** DEBUG ************
+**DEBUG**addRecord function was called with the parameters: 
+        Brian Mayeshiro 
+        123 Test Rd.
+Honolulu, HI.
+96811 
+        1996 
+        5555555
+**DEBUG**The year of birth is: 1996
+
+
+Please enter a Command: 
+print
+
+Please enter the name of the record you want to print: Brian Mayeshiro
+The Record information is: 
+Name: Brian Mayeshiro
+Address: 123 Test Rd.
+Honolulu, HI.
+96811
+Yearofbirth: 1996
+Telno: 5555555
+
+******DEBUG********
+**DEBUG**print function was called with the parameter: Brian Mayeshiro
+
+Please enter a Command: 
+add
+
+Please add an address (Include Name, Year of Birth, Address, and Phone Number): 
+**DEBUG**Entering name
+Please enter the Name: 
+John Cena
+**DEBUG**The name is: John Cena
+**DEBUG**Entering yob
+Please enter the year of birth: 
+1988
+**DEBUG**the yob is: 1988
+
+**DEBUG**Entering Address
+Please Enter the address (Press TAB and ENTER when done): 
+899 fives road  
+**DEBUG**The Address is: 
+899 fives road
+**DEBUG**Entering phone number 
+Please Enter the telephone number: 
+333333
+**DEBUG**The telNumber is: 333333
+
+Record has been added
+******** DEBUG ************
+**DEBUG**addRecord function was called with the parameters: 
+        John Cena 
+        899 fives road 
+        1988 
+        333333
+**DEBUG**The year of birth is: 1988
+
+
+Please enter a Command: 
+printall
+
+Printing all information in the database...
+Record Name: Brian Mayeshiro
+year of birth: 1996
+Address: 123 Test Rd.
+Honolulu, HI.
+96811
+Telno: 5555555
+
+Record Name: John Cena
+year of birth: 1988
+Address: 899 fives road
+Telno: 333333
+
+
+******** DEBUG ************
+**DEBUG**printAllRecords was executed
+**DEBUG**printAllRecords function was called
+
+Please enter a Command: 
+add
+
+Please add an address (Include Name, Year of Birth, Address, and Phone Number): 
+**DEBUG**Entering name
+Please enter the Name: 
+Josh
+**DEBUG**The name is: Josh
+**DEBUG**Entering yob
+Please enter the year of birth: 
+2000
+**DEBUG**the yob is: 2000
+
+**DEBUG**Entering Address
+Please Enter the address (Press TAB and ENTER when done): 
+777 Lucky Ave.
+Honlulu,HI.
+98888   
+**DEBUG**The Address is: 
+777 Lucky Ave.
+Honlulu,HI.
+98888
+**DEBUG**Entering phone number 
+Please Enter the telephone number: 
+7777777
+**DEBUG**The telNumber is: 7777777
+
+Record has been added
+******** DEBUG ************
+**DEBUG**addRecord function was called with the parameters: 
+        Josh 
+        777 Lucky Ave.
+Honlulu,HI.
+98888 
+        2000 
+        7777777
+**DEBUG**The year of birth is: 2000
+
+
+Please enter a Command: 
+print
+
+Please enter the name of the record you want to print: Josh
+The Record information is: 
+Name: Josh
+Address: 777 Lucky Ave.
+Honlulu,HI.
+98888
+Yearofbirth: 2000
+Telno: 7777777
+
+******DEBUG********
+**DEBUG**print function was called with the parameter: Josh
+
+Please enter a Command: 
+reverse
+
+**DEBUG**
+**DEBUG**reversing the list
+List has been reversed
+
+Please enter a Command: 
+printall
+
+Printing all information in the database...
+Record Name: Josh
+year of birth: 2000
+Address: 777 Lucky Ave.
+Honlulu,HI.
+98888
+Telno: 7777777
+
+Record Name: John Cena
+year of birth: 1988
+Address: 899 fives road
+Telno: 333333
+
+Record Name: Brian Mayeshiro
+year of birth: 1996
+Address: 123 Test Rd.
+Honolulu, HI.
+96811
+Telno: 5555555
+
+
+******** DEBUG ************
+**DEBUG**printAllRecords was executed
+**DEBUG**printAllRecords function was called
+
+Please enter a Command: 
+reverse
+
+**DEBUG**
+**DEBUG**reversing the list
+List has been reversed
+
+Please enter a Command: 
+printall
+
+Printing all information in the database...
+Record Name: Brian Mayeshiro
+year of birth: 1996
+Address: 123 Test Rd.
+Honolulu, HI.
+96811
+Telno: 5555555
+
+Record Name: John Cena
+year of birth: 1988
+Address: 899 fives road
+Telno: 333333
+
+Record Name: Josh
+year of birth: 2000
+Address: 777 Lucky Ave.
+Honlulu,HI.
+98888
+Telno: 7777777
+
+
+******** DEBUG ************
+**DEBUG**printAllRecords was executed
+**DEBUG**printAllRecords function was called
+
+Please enter a Command: 
+modify
+
+Please enter the name of the record you wnat to modify: 
+**DEBUG**Entering name
+Please enter the Name: 
+John Cena
+**DEBUG**The name is: John Cena
+Please Enter the address (Press TAB and ENTER when done): 
+888 Leet Rd.    
+**DEBUG**The Address is: 888 Leet Rd.
+**DEBUG**Entering phone number 
+Please Enter the telephone number: 
+8888888
+**DEBUG**The telNumber is: 8888888
+
+Record has been modified
+******** DEBUG ************
+**DEBUG**modifyRecord function was called with the parameters: John Cena 888 Leet Rd. 8888888
+
+Please enter a Command: 
+print
+
+Please enter the name of the record you want to print: John Cena
+The Record information is: 
+Name: John Cena
+Address: 888 Leet Rd.
+Yearofbirth: 1988
+Telno: 8888888
+
+******DEBUG********
+**DEBUG**print function was called with the parameter: John Cena
+
+Please enter a Command: 
+delete
+
+Please enter the name of the record you would like to delete: John Cena
+Record(s) deleted
+******** DEBUG ************
+**DEBUG**deleteRecord function was called with the parameter: John Cena
+
+
+Please enter a Command: 
+printall
+
+Printing all information in the database...
+Record Name: Brian Mayeshiro
+year of birth: 1996
+Address: 123 Test Rd.
+Honolulu, HI.
+96811
+Telno: 5555555
+
+Record Name: Josh
+year of birth: 2000
+Address: 777 Lucky Ave.
+Honlulu,HI.
+98888
+Telno: 7777777
+
+
+******** DEBUG ************
+**DEBUG**printAllRecords was executed
+**DEBUG**printAllRecords function was called
+
+Please enter a Command: 
+hi
+
+Please enter an appropriate command:
+
+add
+print
+modify
+printall
+delete
+reverse
+quit (to exit out of the program)
+
+
+Please enter a Command: 
+quit
+
+BYE! 
+**DEBUG**writefile called
+**DEBUG**Cleaning up the linked list
+******** DEBUG ************
+**DEBUG**EXITING THE PROGRAM
+**END OF DEBUG**
+uhx01% ./proj2
+**DEBUG**Readfile was called on 'readtest.txt'
+Hello!
+This program is a Record Database for Addresses. 
+
+Please enter a Command: 
+printall
+
+Printing all information in the database...
+Record Name: Brian Mayeshiro
+year of birth: 1996123
+Address:  Test Rd.
+Honolulu, HI.
+96811
+Telno: 5555555
+
+Record Name: Josh
+year of birth: 2000777
+Address:  Lucky Ave.
+Honlulu,HI.
+98888
+Telno: 7777777
+
+
+******** DEBUG ************
+**DEBUG**printAllRecords was executed
+**DEBUG**printAllRecords function was called
+
+Please enter a Command: 
+        quit
+
+BYE! 
+**DEBUG**writefile called
+**DEBUG**Cleaning up the linked list
+******** DEBUG ************
+**DEBUG**EXITING THE PROGRAM
+**END OF DEBUG**
+uhx01% exit
+uhx01% 
+script done on Tue Nov 24 08:57:09 2015
