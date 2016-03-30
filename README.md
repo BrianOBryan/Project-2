@@ -48,7 +48,7 @@ Naming convention
  Function names and arguments must be self-explanatory
 
 Other
- Unless part of the requirement, functions must not have any input or output statements
+  Unless part of the requirement, functions must not have any input or output statements
  Single return statement in functions
  No global variables
 
