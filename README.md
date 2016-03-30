@@ -33,22 +33,22 @@ PROGRAMMING STYLE CHECKLIST
 Every programming homework must be checked against this list before submission.
 
 Comments
- File header comment
- Function header comments
++File header comment
++Function header comments
 
 Use of spaces
- Between operators and between "paragraphs"
- Separating comment lines with a blank line
++Between operators and between "paragraphs"
++Separating comment lines with a blank line
 
 Indentation
- Functions and loops
++Functions and loops
 
 Naming convention
- No single letter variables except as loop variables
- Function names and arguments must be self-explanatory
++No single letter variables except as loop variables
++Function names and arguments must be self-explanatory
 
 Other
-  Unless part of the requirement, functions must not have any input or output statements
- Single return statement in functions
- No global variables
++Unless part of the requirement, functions must not have any input or output statements
++Single return statement in functions
++No global variables
 
