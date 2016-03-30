@@ -1,11 +1,11 @@
 # SimpleAddressBookCpp
 (ICS212) Program Structures Address Book in C++
 
-/**\n
-Author: Brian Mayeshiro\n
-Class: ICS212\n
-Instructor: Ravi Narayan\n
-*/\n
+/**
+Author: Brian Mayeshiro
+Class: ICS212
+Instructor: Ravi Narayan
+*/
 
 Description:
 
@@ -13,7 +13,7 @@ Create a simple address book in C++ using UNIX that compiles with make
 
 **NOTEABLE REQUIREMENTS:
 
-1. The Following Functions must be included\n
+1. The Following Functions must be included
   Add;
   Delete;
   Modify;
